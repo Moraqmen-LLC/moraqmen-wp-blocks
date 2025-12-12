@@ -1,0 +1,46 @@
+{
+  "name": "moraqmen-blocks",
+  "version": "1.0.0",
+  "description": "Custom Gutenberg blocks for WordPress FSE with Tailwind CSS integration",
+  "main": "plugin.php",
+  "scripts": {
+    "start": "wp-scripts start",
+    "build": "wp-scripts build",
+    "lint": "wp-scripts lint-js src",
+    "format": "wp-scripts format-js src",
+    "test": "wp-scripts test-unit-js --watch"
+  },
+  "dependencies": {
+    "@wordpress/blocks": "^12.0.0",
+    "@wordpress/block-editor": "^12.0.0",
+    "@wordpress/components": "^25.0.0",
+    "@wordpress/element": "^5.0.0",
+    "@wordpress/i18n": "^4.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "classnames": "^2.3.2"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^27.0.0",
+    "tailwindcss": "^3.3.0",
+    "postcss": "^8.4.24",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.47.0",
+    "prettier": "^3.0.2"
+  },
+  "keywords": [
+    "wordpress",
+    "gutenberg",
+    "blocks",
+    "tailwind",
+    "react",
+    "fse"
+  ],
+  "author": "Kfathy194",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/kfathy194/Moraqmen-Blocks",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kfathy194/Moraqmen-Blocks.git"
+  }
+}
