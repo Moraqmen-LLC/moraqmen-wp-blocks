@@ -1,0 +1,1 @@
+import{registerBlockType}from'@wordpress/blocks';import FeatureCardsEdit from'./edit';import FeatureCardsSave from'./save';import metadata from'./block.json';registerBlockType(metadata.name,{...metadata,edit:FeatureCardsEdit,save:FeatureCardsSave});
