@@ -1,0 +1,85 @@
+// Hero Banner Block Styles
+
+.wp-block-moraqmen-blocks-hero-banner {
+  margin: 0;
+  padding: 0;
+}
+
+.moraqmen-hero {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.moraqmen-hero__overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.moraqmen-hero__content {
+  max-width: 600px;
+  width: 100%;
+}
+
+.moraqmen-hero__headline {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.moraqmen-hero__subheadline {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  margin: 0 0 2rem 0;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+}
+
+.moraqmen-hero__cta {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #0066cc;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #0052a3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 102, 204, 0.4);
+  }
+
+  &:focus {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+  }
+}
+
+@media (max-width: 768px) {
+  .moraqmen-hero {
+    min-height: 300px;
+  }
+
+  .moraqmen-hero__headline {
+    font-size: 1.75rem;
+  }
+
+  .moraqmen-hero__subheadline {
+    font-size: 1rem;
+  }
+}
