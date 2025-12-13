@@ -1,0 +1,77 @@
+// Testimonials Block Styles
+.testimonials-grid {
+  display: grid;
+  gap: var(--wp--custom--spacing-medium, 2rem);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.testimonials-grid.columns-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.testimonials-grid.columns-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.testimonials-carousel {
+  overflow-x: auto;
+  display: flex;
+  gap: 2rem;
+}
+
+.testimonial {
+  padding: var(--wp--custom--spacing-medium, 1.5rem);
+  background: var(--wp--preset--color--background, #fff);
+  border-radius: var(--wp--custom--border-radius, 0.5rem);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.quote {
+  font-style: italic;
+  color: var(--wp--custom--text-primary, #333);
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.author {
+  font-weight: 600;
+  margin: 0.5rem 0 0 0;
+  color: var(--wp--preset--color--text, #000);
+}
+
+.role {
+  font-size: 0.875rem;
+  color: var(--wp--custom--text-secondary, #666);
+  margin: 0.25rem 0 0 0;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.rating {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: var(--wp--custom--accent-color, #f59e0b);
+}
+
+.star {
+  margin-right: 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+}
